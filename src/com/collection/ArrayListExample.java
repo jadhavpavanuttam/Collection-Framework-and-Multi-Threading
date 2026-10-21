@@ -4,6 +4,9 @@ import java.util.*;
 
 public class ArrayListExample {
     public static void main(String[] args) {
+// synchronized list
+//        List<Integer> list = new ArrayList<>();
+//        List<Integer> list = Collections.synchronizedList(new ArrayList<>());
         // Create an ArrayList of integers
         List<Integer> numbers = new ArrayList<>();
 
@@ -55,7 +58,7 @@ public class ArrayListExample {
         Iterator<Integer> iterator1 = list1.iterator();
         while (iterator1.hasNext()) {
             System.out.println(iterator1.next());
-          
+
         }
     }
 }

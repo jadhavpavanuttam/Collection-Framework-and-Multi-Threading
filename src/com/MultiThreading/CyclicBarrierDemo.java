@@ -8,7 +8,7 @@ public class CyclicBarrierDemo {
 
     public static void main(String[] args) {
         int numberOfSubsystems = 4;
-        CyclicBarrier barrier = new CyclicBarrier(numberOfSubsystems, new Runnable() {
+        final CyclicBarrier barrier = new CyclicBarrier(numberOfSubsystems, new Runnable() {
             @Override
             public void run() {
                 System.out.println("All subsystems are up and running. System startup complete.");

@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 
 public class ExecutiveServiceDemo {
     public static void main(String[] args) throws InterruptedException {
-
+//        ExecutorService service = Executors.newCachedThreadPool()  -->service.execute(runnable);
         ExecutorService executorService = Executors.newSingleThreadExecutor();
 
         Future f1 = executorService.submit(new Callable() {
