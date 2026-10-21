@@ -1,10 +1,4 @@
-package com.hashmap;
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
-
-import java.sql.Array;
-
-import static java.lang.Integer.sum;
+package com.mapClasses;
 
 public class MinimumSubArray {
     public static void main(String[] args) {

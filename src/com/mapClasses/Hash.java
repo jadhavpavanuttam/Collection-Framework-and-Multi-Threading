@@ -1,4 +1,4 @@
-package com.hashmap;
+package com.mapClasses;
 
 public class Hash {
 

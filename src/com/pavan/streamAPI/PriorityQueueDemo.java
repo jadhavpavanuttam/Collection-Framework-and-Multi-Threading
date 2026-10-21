@@ -7,14 +7,15 @@ import java.util.concurrent.TimeUnit;
 
 public class PriorityQueueDemo {
     public static void main(String[] args) {
-//        PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
-//        System.out.println("Offer : " + queue.offer(6));
-//        System.out.println("Offer : " + queue.offer(3));
-//        System.out.println("Offer : " + queue.offer(2));
-//        System.out.println("Offer : " + queue.offer(5));
-//        System.out.println("Offer : " + queue.offer(16));
-//        System.out.println("Offer : " + queue.offer(9));
-//        System.out.println(queue.poll());  //highest element can give as output
+        PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
+        System.out.println("Offer : " + queue.offer(6));
+        System.out.println("Offer : " + queue.offer(3));
+        System.out.println("Offer : " + queue.offer(2));
+        System.out.println("Offer : " + queue.offer(5));
+        System.out.println("Offer : " + queue.offer(16));
+        System.out.println("Offer : " + queue.offer(9));
+        System.out.println(queue.poll());  //highest element can give as output
+        queue.stream().findAny().ifPresent(System.out::println);
         ArrayDeque<Integer> deque = new ArrayDeque<>();
         deque.push(12);
         deque.push(10);

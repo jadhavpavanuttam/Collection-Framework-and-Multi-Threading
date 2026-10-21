@@ -1,4 +1,5 @@
-package com.hashmap;
+package com.mapClasses;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
