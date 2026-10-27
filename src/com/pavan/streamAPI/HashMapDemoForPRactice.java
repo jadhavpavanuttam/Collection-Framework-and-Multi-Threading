@@ -10,7 +10,7 @@ public class HashMapDemoForPRactice {
 
     public static void main(String[] args) {
 
-        map = new HashMap<>(17,0.5f);
+        map = new HashMap<>(17, 0.5f);
         map.put(1, "a");
         map.put(2, "b");
         map.put(3, "c");
@@ -21,19 +21,19 @@ public class HashMapDemoForPRactice {
         map.put(8, "h");
         map.put(9, "i");
         map.put(10, "j");
-        map.put(11,"k");
-        map.put(12,"l");
-        map.put(13,"m");
-        map.put(14,"n");
-        map.put(15,"o");
-        map.put(16,"p");
-        System.out.println("removed ? "+map.remove(16,"p".toUpperCase(Locale.ROOT)));
+        map.put(11, "k");
+        map.put(12, "l");
+        map.put(13, "m");
+        map.put(14, "n");
+        map.put(15, "o");
+        map.put(16, "p");
+        System.out.println("removed ? " + map.remove(16, "p".toUpperCase(Locale.ROOT)));
 //        map.put(null, "pavan");  //Throw null pointer exception whenever we're going to operates streams on null keys.
         System.out.println(map);
 //        map.put(null, "vipul");//now pavan is replaced by vipul
         System.out.println(map.getOrDefault("a", "2"));
         System.out.println("removed ?   " + map.remove(1));
-                map.entrySet()
+        map.entrySet()
                 .stream()
                 .filter(x -> x.getKey() % 2 == 1)
                 .toList()
